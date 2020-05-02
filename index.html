@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+ <title>The Co-Operative Motor Insurance</title>
+ <meta charset="utf-8">
+ </head>
+ <body>
+  <form action="http://www.example.org/membership/login.aspx" method="get">
+ <fieldset>
+  <legend><u>Cover Details</u></legend>
+  <table>
+   <tr>
+   <td><label for="licence">How many years have you held<br>your driving licence</label></td>
+   <td><select name="selAge" id="licence" size="1">
+      <option selected="selected"value="">Select Age</option>
+      <option value = "less1">Less than 1 year</option>
+      <option value ="less5">More than 1 but less than 5</option>
+      <option value ="less10">More than 5 but less than 10</option>
+      <option value ="more10">More than 10</option>
+    </select></td><td></td>
+    <td><label for="accident">Have you had any accident or<br>loss in last 4 year?</label></td>
+    <td><input type="radio" name="radAcc" value="Yes">Yes</td>
+    <td><input type="radio" name="radAcc" value="No">No</td>
+   </tr>
+   <tr>
+   <td><label for="date">When would like the<br>insurance to start(dd/mm/yyyy)</label></td>
+    <td><input type="date" id="date" value="" name="txtDate" size="20" maxlength="20"></td><td></td>
+    <td><label for="Fine">Have you been convicted of, or<br>received a fixed penalty notice<br>for, a motoring offence in the last<br>5 years or is any prosecution<br>pending?</label></td>
+    <td><input type="radio" name="radFine" id="Fine" value="yes">Yes</td>
+    <td><input type="radio" name="radFine" id="Fine" value="No">No</td>
+   </tr>
+   <tr>
+    <td><label for="Discount">Number of years No Claimed<br>discount earned</label></td>
+    <td colspan="2"><input type="telephone" name="txtDiscount" id="Discount" value=""></td>
+    <td><label for="Drivers">Are there any additional drivers?</label></td>
+    <td><input type="radio" id="Drivers" name="radExtra" value="Yes">Yes</td>
+    <td><input type="radio" id="Drivers" name="radExtra" value="No">No</td>
+   </tr>
+   <tr>
+    <td><label for="NCD">Are you claiming NCD from a <br>previous Co-operative Insurance<br>motor policy?</label></td>
+    <td><input type="radio" id="NCD" name="radNCD" value="yes">Yes
+    <input type="radio" id="NCD" name="radNCD" value="no">No</td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tr>
+  </table>
+  </fieldset>
+   </form>
+  <form action="http://www.example.org/membership/login.aspx">
+  <fieldset>
+  <legend><u>Vehicle Details</u></legend>
+   <h4>If your vehicle is a van/pick-up,please call our Customer Contact Centre <br>on 08457 464646 for a quotation</h4>
+   <table>
+   <tr>
+    <td ><label for="Registration">Vehicle Registration Number</label></td>
+    <td><input type="number" id="Registration" name="txtRegistration" value=""placeholder="Register"></td>
+    <td><label for="Mileage">Annual Mileage</label></td>
+    <td><select name="selMileage" id="Mileage" size="1">
+     <option selected="selected" value="">Select</option>
+     <option value="<30">less than 30</option>
+     <option value="<50">more than 30</option>
+     <option value=">50">more than 50</option>
+     </select></td>
+    </tr>
+    <tr>
+     <td>Alternatively choose your vehicle below</td><td></td>
+     <td><label for="Night">Where is the vehicle<br>normally kept overnight?</label></td>
+     <td><select name="selVehicle" id="Night" size="1">
+      <option selected="selected" value="">Select</option>
+      <option value="HOME">HOME</option>
+      <option value="PUB">PUB</option>
+      <option value="OFFICE">OFFICE</option>
+      </select>
+     </td>
+    </tr>
+    <tr>
+     <td><label for="VType">Vehicle Type</label></td>
+    <td><select name="selVType" id="VType" size="1"maxlength="20">
+     <option selected="Selected" value="">Select</option>
+     <option value="SUV">SUV</option>
+     <option value="Sedan">Sedan</option>
+     <option value="Coupe">Coupe</option>
+     <option value="Convertible">Convertible</option>
+     </select></td>
+     <td><label for="Cost">Estimated value of vehicle<br>including accessories($)</label></td>
+     <td><input type="text" id="Cost" value="" name="txtCost"  size="20" maxlength="20" placeholder="Cost">
+     <datalist id="dCost">
+      <option value="$10000">$100000</option>
+      <option value="$20000">$200000</option>
+      <option value="$30000">$300000</option>
+      </datalist>
+     </td>
+     <tr>
+      <td></td>
+      <td><input type="reset" value="Clear" name="btnClear"></td>
+      <td></td><td></td>
+    </tr>
+   </table>
+   <p>If you are having any problems locating your car please contact our call<br>centre on 08457 464646</p>
+   <table>
+     <tr>
+      <td>
+       <label for="Use">Purpose for which vehicle<br>will be used</label>
+      </td>
+      <td>
+          <select name="selUse" id="Use" size="1" maxlength="20">
+     <option selected="use" value="Social">Social,Domestic,or Pleasure including Commuting</option>
+     <option value="fun">FUN</option>
+     <option value="travelling">TRAVELLING</option>
+     <option value="office">OFFICE</option>
+     <option value="market">MARKET</option>
+    </select>
+      </td>
+    </tr>
+   </table>
+   </fieldset>
+  </form>
+  <table>
+   <tr>
+    <td><label for="apply">
+     What prompted you to apply online?</label></td>
+    <td><select name="selApply" id="apply" size="1">
+     <option selected="selected" value="">Select</option>
+     <option value="facebook">Facebook</option>
+     <option value="instagram">Instagram</option>
+     <option value="twitter">Twitter</option>
+     <option value="magicpin">Magic Pin</option>
+     </select>
+   </tr>
+  </table>
+  <form action="http://www.example.org/membership/login.aspx">
+  <p><label for="Personal">Please tick if you do not wish to receive marketing from The Co-Operative family of Companies as described in &quot;vehicle of Your Personal Data&quot; </label>
+  <p>By Email
+  <input type="checkbox" id="Personal" name="txtEmail" value="email"><br>
+   </p>
+   <p>By Post
+    <input type="checkbox" id="Personal" name="txtPost" value="post"></p>
+    <p>By Phone
+  <input type="checkbox" id="Personal" name="txtPhone" value="phone"><br>
+   </p>
+  </form>
+  <footer>All content copyright </footer>
+  <small>First Project for GitHub
+  </small>
+   </body>
+</html>
